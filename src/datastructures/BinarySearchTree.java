@@ -1,6 +1,6 @@
 package DataStructures;
 
-import DataStructures.Nodes.TreeNode;
+import datastructures.nodes.TreeNode;
 
 /**
  * @author Connor Rice

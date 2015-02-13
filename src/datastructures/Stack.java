@@ -1,6 +1,6 @@
 package DataStructures;
 
-import DataStructures.Nodes.StackNode;
+import datastructures.nodes.StackNode;
 
 public class Stack<T> {
 

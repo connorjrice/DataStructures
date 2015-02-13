@@ -1,6 +1,6 @@
 package DataStructures;
 
-import DataStructures.Nodes.QueueNode;
+import datastructures.nodes.QueueNode;
 
 public class Queue<T> {
 

@@ -1,4 +1,4 @@
-package DataStructures.Nodes;
+package datastructures.nodes;
 
 public class TreeNode<T extends Comparable> {
 

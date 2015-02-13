@@ -8,7 +8,7 @@ import java.util.HashMap;
  * @author Connor Rice
  * @param <T>
  */
-public class Graph<T extends Comparable> {
+public class WeightedGraph<T extends Comparable> {
 
     private boolean[][] edges;
     private GraphNode[] nodes;
@@ -16,7 +16,7 @@ public class Graph<T extends Comparable> {
     private int maxSize;
     private int currentSize;
 
-    public Graph(int maxSize) {
+    public WeightedGraph(int maxSize) {
         this.maxSize = maxSize;
         this.currentSize = 0;
         this.edges = new boolean[maxSize][maxSize];
