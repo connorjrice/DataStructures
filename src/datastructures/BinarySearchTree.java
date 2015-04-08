@@ -12,7 +12,7 @@ public class BinarySearchTree<T extends Comparable> {
     public BinarySearchTree() {
         root = null;
     }
-
+    
     public void add(Comparable obj) {
         TreeNode<T> newNode = new TreeNode<T>();
         newNode.setData(obj);
@@ -107,6 +107,10 @@ public class BinarySearchTree<T extends Comparable> {
         }
     }
 
+    public TreeNode getRoot() {
+        return root;
+    }
+    
     public void print() {
         if (root != null) {
             root.printNodes();
