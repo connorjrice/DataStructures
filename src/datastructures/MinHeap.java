@@ -5,13 +5,14 @@ package DataStructures;
  * implementation in Big Java, but uses statically sized arrays instead of
  * ArrayLists, and adds more functionality.
  * @author Connor Rice, May 2014
+ * @param <T>
  */
 public class MinHeap<T extends Comparable> {
 
     private Comparable<T>[] heap;
     private int maxSize;
     private int currentSize;
-    private int scalingFactor;
+    private final int scalingFactor;
 
     /**
      * Constructor, takes in an integer that is the original size of the array

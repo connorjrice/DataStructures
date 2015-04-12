@@ -25,7 +25,6 @@ public class BinarySearchTree<T extends Comparable> {
 
     /**
      * Returns true if the input object is contained within the tree.
-     *
      * @param obj
      * @return
      */
@@ -109,6 +108,19 @@ public class BinarySearchTree<T extends Comparable> {
 
     public TreeNode getRoot() {
         return root;
+    }
+    
+    public int getMaxDepth() {
+        return depthHelper(root);
+    }
+    
+    private int depthHelper(TreeNode node) {
+        if (node == null) {
+            return 0;
+        } else {
+            return Math.max(depthHelper(node.getLeftChild()), 
+                    depthHelper(node.getRightChild())) + 1;
+        }
     }
     
     public void print() {

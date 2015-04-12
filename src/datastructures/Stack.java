@@ -13,7 +13,7 @@ public class Stack<T> {
     }
 
     public void push(T newTopElement) {
-        StackNode<T> newTopNode = new StackNode<T>(newTopElement);
+        StackNode<T> newTopNode = new StackNode<>(newTopElement);
         if (top == null) {
             top = newTopNode;
         } else {

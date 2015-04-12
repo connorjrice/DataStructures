@@ -20,7 +20,7 @@ public class Queue<T> {
     }
 
     public void enqueue(T newElement) {
-        QueueNode<T> queueIn = new QueueNode<T>(newElement);
+        QueueNode<T> queueIn = new QueueNode<>(newElement);
         if (front == null) {
             front = queueIn;
             back = queueIn;
